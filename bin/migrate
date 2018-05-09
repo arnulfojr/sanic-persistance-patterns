@@ -1,0 +1,8 @@
+#!/usr/local/bin/python3
+from peewee_moves import DatabaseManager
+from lib.mysql import (migrator, db)
+
+manager: DatabaseManager = migrator.get(db.database)
+
+# upgrade to latest
+manager.upgrade()

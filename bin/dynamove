@@ -1,0 +1,38 @@
+#!/usr/local/bin/python3
+import asyncio
+import argparse
+from lib.dynamo import migration
+from reminder.models import Reminder
+
+
+async def upgrade(loop):
+    """Execute upgarde."""
+    await migration.ensure_table(Reminder.schema())
+
+
+async def downgrade(loop):
+    """Execute downgrade."""
+    await migration.delete_table(Reminder.schema())
+
+
+def main(do_upgrade: bool = True):
+    try:
+        loop = asyncio.get_event_loop()
+        if do_upgrade:
+            loop.run_until_complete(upgrade(loop))
+        else:
+            loop.run_until_complete(downgrade(loop))
+    except Exception as e:
+        print(e)
+
+
+parser = argparse.ArgumentParser(description='Dynamove')
+parser.add_argument('command',
+                    help="Command to execute upgrade|downgrade")
+commands = ['upgrade', 'downgrade']
+args = parser.parse_args()
+
+
+if __name__ == '__main__':
+    if args.command in commands:
+        main(args.command == 'upgrade')

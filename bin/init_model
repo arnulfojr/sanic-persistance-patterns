@@ -1,0 +1,9 @@
+#!/usr/local/bin/python3
+"""Creates the initial table of a model."""
+from peewee_moves import DatabaseManager
+from lib.mysql import (migrator, db)
+
+manager: DatabaseManager = migrator.get(db.database)
+
+# register all models' modules
+manager.create('todo.models.todo.ToDo')

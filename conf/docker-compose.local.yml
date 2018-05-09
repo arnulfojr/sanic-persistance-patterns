@@ -1,0 +1,19 @@
+version: '3.4'
+services:
+  # -- app -- #
+  app:
+    volumes:
+      - ./src/:/app/src/
+      - ./migrations/:/app/migrations/
+      - ./bin/:/app/bin/
+    ports:
+      - 5000:5000
+  # -- databases -- #
+  mysql:
+    ports:
+      - 3306:3306
+
+  dynamodb:
+    ports:
+      - 8000:8000
+
