@@ -1,1 +1,1 @@
-aiobotocore==0.8.0
+git+https://github.com/arnulfojr/aioboto3.git

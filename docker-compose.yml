@@ -3,9 +3,7 @@ services:
   # -- app -- #
   app:
     image: python-app
-    build:
-      context: .
-      target: dynamo-based
+    build: .
     depends_on:
       - mysql
       - dynamodb
