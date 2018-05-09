@@ -3,15 +3,15 @@ Sanic using Persistence layer
 
 Spoiler alert!
 --------------
-NoSQL usage with DynamoDB is only supported with sync (Sanic is async) code.
+NoSQL usage with PyDynamo (an ORM-like) is only supported with sync (i.e. Flask, Sanic is async) code.
 
-There's no migrations for DynamoDB
+There's no migrations for DynamoDB but making simple migrations can be easily done.
 
 
 DynamoDB
 --------
 
-Use of botocore
+Use of aiobotocore and aioboto3
 
 
 ORM
