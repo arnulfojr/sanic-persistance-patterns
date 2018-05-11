@@ -18,7 +18,7 @@ Use of aiobotocore and aioboto3.
 
 - botocore http://botocore.readthedocs.io/en/latest/index.html
 - boto3 http://boto3.readthedocs.io/en/stable/guide/dynamodb.html
-  - aioboto3 (but refer to boto3 docs) https://aioboto3.readthedocs.io/en/latest/readme.html
+- aioboto3 (but refer to boto3 docs) https://aioboto3.readthedocs.io/en/latest/readme.html
 
 Migrations in NoSQL
 -------------------
