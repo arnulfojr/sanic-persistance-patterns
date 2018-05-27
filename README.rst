@@ -1,6 +1,9 @@
 Sanic using Persistence layer
 =============================
 
+.. raw:: html
+<a href="https://snyk.io/test/github/arnulfojr/sanic-persistance-patterns?targetFile=requirements.txt"><img src="https://snyk.io/test/github/arnulfojr/sanic-persistance-patterns/badge.svg?targetFile=requirements.txt" alt="Known Vulnerabilities" data-canonical-src="https://snyk.io/test/github/arnulfojr/sanic-persistance-patterns?targetFile=requirements.txt" style="max-width:100%;"></a>
+
 Spoiler alert!
 --------------
 
