@@ -12,9 +12,9 @@ COPY ./src ${APP_DIR}/src
 
 COPY ./requirements.txt ${APP_DIR}/requirements.txt
 
-COPY ./requirements-mysql.txt ${APP_DIR}/requirements-mysql.txt
+COPY ./conf/mysql/requirements.txt ${APP_DIR}/requirements-mysql.txt
 
-COPY ./requirements-dynamo.txt ${APP_DIR}/requirements-dynamo.txt
+COPY ./conf/dynamo/requirements.txt ${APP_DIR}/requirements-dynamo.txt
 
 RUN pip3 install -r ${APP_DIR}/requirements.txt
 
