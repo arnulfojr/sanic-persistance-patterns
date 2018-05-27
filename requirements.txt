@@ -1,3 +1,8 @@
 sanic==0.7.0
+aioboto3==4.0.0
 marshmallow==2.15.1
 pendulum
+peewee-async==0.5.12
+peewee-moves==1.7.2
+aiomysql
+click
