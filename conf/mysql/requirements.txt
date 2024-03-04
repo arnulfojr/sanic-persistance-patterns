@@ -2,3 +2,4 @@ peewee-async==0.5.12
 peewee-moves==1.7.2
 aiomysql==0.0.15
 click==6.7
+peewee>=3.17.1 # not directly required, pinned by Snyk to avoid a vulnerability
